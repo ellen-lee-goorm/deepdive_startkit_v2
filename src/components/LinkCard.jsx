@@ -6,7 +6,7 @@ function LinkCard({ title, description, linkUrl, linkTitle, children }) {
     <div className="flex gap-14 w-full text-start">
       <section className="flex flex-col flex-1 bg-[var(--card-bg)] px-10 py-8 rounded-2xl">
         <div className="flex gap-4 items-center mb-6">
-          <h3 className="text-lg">{title}</h3>
+          <h3 className="text-[22px] font-bold">{title}</h3>
           <p className="text-sm text-[var(--description)]">{description}</p>
         </div>
         {children}
