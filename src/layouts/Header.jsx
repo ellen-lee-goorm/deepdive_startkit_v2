@@ -6,8 +6,10 @@ function Header() {
   return (
     <header className="flex flex-col text-center items-center pb-24 border-b-[0.8px] border-b-[var(--line)]">
       <img src={banner} alt="프론트엔드 배너 이미지" width="1075px" />
-      <p className="mt-18 mb-1 font-bold">과정명</p>
-      <h1 className="mb-16">
+      <p className="mt-18 mb-5 text-[#539CCA] font-bold">
+        [구름 x 인프런] 자바 스프링 & 리액트 풀스택 개발자 성장 과정(20회차)
+      </p>
+      <h1 className="mb-16 text-4xl font-bold">
         DEEP DIVE 입과 안내
         <br />
         Start Kit
