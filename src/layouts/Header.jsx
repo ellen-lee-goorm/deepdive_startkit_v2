@@ -4,7 +4,7 @@ import { IoChevronDownCircleOutline } from 'react-icons/io5';
 
 function Header() {
   return (
-    <header className="flex flex-col text-center items-center">
+    <header className="flex flex-col text-center items-center pb-24 border-b-[0.8px] border-b-[var(--line)]">
       <img src={banner} alt="프론트엔드 배너 이미지" width="1075px" />
       <p className="mt-18 mb-1 font-bold">과정명</p>
       <h1 className="mb-16">
