@@ -1,6 +1,7 @@
 import React from 'react';
 import LogoInflearn from '../assets/logos/logo-inflearn.svg';
 import LogoDeepDive from '../assets/logos/logo-deepdive.png';
+import PrelearningRoadmap from '../components/PrelearningRoadmap';
 
 function PrelearningStep() {
   return (
@@ -11,7 +12,7 @@ function PrelearningStep() {
       <p className="leading-[21px] mb-11">
         개강 전 몰입을 위해 아래 내용을 준비해주세요.
       </p>
-      <div className="flex w-full justify-between gap-8 break-keep font-light">
+      <div className="flex w-full justify-between gap-8 mb-12 break-keep font-light">
         <div className="flex flex-col flex-1 justify-between items-center px-3.5 py-8 bg-[var(--card-bg-dark)] rounded-2xl">
           <img src={LogoInflearn} alt="인프런" width="180px" />
           <h3 className="text-2xl font-bold mt-8">인프런 계정 제출</h3>
@@ -65,6 +66,7 @@ function PrelearningStep() {
           </p>
         </div>
       </div>
+      <PrelearningRoadmap />
     </article>
   );
 }
