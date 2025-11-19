@@ -22,7 +22,7 @@ function RequireStep() {
         <br />
         아래 안내 드리는 필수 진행 사항은 지금 바로 진행해주세요!
       </p>
-      <div className="flex flex-col gap-7">
+      <div className="flex flex-col gap-7 w-full">
         <LinkCard
           title="고용24 수강신청"
           description="과정 수강을 위해서는 고용24에서 수강신청을 완료해야 합니다. 아래 안내에 따라 수강신청을 완료해주세요."
