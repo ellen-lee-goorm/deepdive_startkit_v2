@@ -1,4 +1,5 @@
 import './App.css';
+import DeepdiveStep from './layouts/DeepdiveStep';
 import Footer from './layouts/Footer';
 import Header from './layouts/Header';
 import PrelearningStep from './layouts/PrelearningStep';
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <RequireStep />
       <PrelearningStep />
+      <DeepdiveStep />
       <Footer />
     </div>
   );

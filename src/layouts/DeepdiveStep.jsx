@@ -1,0 +1,96 @@
+import React from 'react';
+import imgCommunity from '../assets/icons/community.png';
+import imgCS from '../assets/icons/cs.png';
+import imgDeeptalk from '../assets/icons/deeptalk.png';
+import imgMentoring from '../assets/icons/mentoring.png';
+import imgSurvey from '../assets/icons/survey.png';
+
+function DeepdiveStep() {
+  return (
+    <article className="flex flex-col items-center w-full text-[18px] mb-48 py-24 ">
+      <span className="px-3 py-2 border-2 rounded-3xl text-sm font-bold text-[#539CCA] mb-7">
+        본격 몰입 단계
+      </span>
+      <p className="leading-[21px] mb-11">
+        과정 시작 후 2주간은 특별 집중 관리 기간입니다.
+        <br />
+        강도 높은 학습과 밀착 케어로 확실한 성장을 경험하세요
+      </p>
+      <div className="mb-20">과정별 진행 사항</div>
+      <div className="flex flex-col items-center w-full mb-56">
+        <div className="flex flex-col gap-5 mb-20">
+          <h1 className="text-2xl font-bold">9 to 6 운영 지원 체계</h1>
+          <p className="leading-[21px] ">
+            운영 매니저가 오전 9시부터 오후 6시까지 함께하며
+            <br />
+            실시간으로 여러분의 학습 여정을 케어합니다.
+          </p>
+        </div>
+        <section className="flex justify-between w-full">
+          <div className="flex flex-col gap-2.5 items-center">
+            <img src={imgCS} alt="실시간 문의 응대" width="150px" />
+            <h2 className="text-2xl font-bold">실시간 문의 응대</h2>
+            <p>
+              Zoom에 상주하며
+              <br />
+              문의사항을 즉시 해결합니다.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2.5 items-center">
+            <img src={imgCommunity} alt="커뮤니티 지원" width="150px" />
+            <h2 className="text-2xl font-bold">커뮤니티 지원</h2>
+            <p>
+              Discord 채널을 통해
+              <br />
+              동료 플레이어와 소통하세요.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2.5 items-center">
+            <img src={imgMentoring} alt="개인별 멘토링" width="150px" />
+            <h2 className="text-2xl font-bold">개인별 멘토링</h2>
+            <p>
+              1:1 커피챗을 통해
+              <br />
+              맞춤형 성장 가이드를 제공합니다.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div className="flex flex-col items-center mb-56">
+        <div className="flex flex-col gap-5 mb-25">
+          <h1 className="text-2xl font-bold">지속적인 피드백 시스템</h1>
+          <p className="leading-[21px]">
+            수집된 피드백을 24시간 내 분석하여 즉시 실행 가능한 개선사항을 바로
+            반영합니다.
+          </p>
+        </div>
+        <section className="flex gap-48">
+          <div className="flex flex-col gap-2.5 items-center">
+            <img src={imgSurvey} alt="정기 만족도 조사" width="150px" />
+            <h2 className="text-2xl font-bold">정기 만족도 조사</h2>
+            <p>
+              개강 후 2주간 운영/강사/콘텐츠 영역별로
+              <br />
+              만족도 조사를 진행해 피드백을 수집합니다.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2.5 items-center">
+            <img src={imgDeeptalk} alt="DEEP TALK" width="150px" />
+            <h2 className="text-2xl font-bold">DEEP TALK</h2>
+            <p>
+              강사님과 1:1 커피챗을 정기적으로 진행해
+              <br />
+              개인별 맞춤 조언과 가이드를 제공합니다.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div className="flex flex-col gap-6 text-center text-2xl font-bold">
+        <h2>풀스택 개발자로 거듭나기 위한 여정이 시작됩니다.</h2>
+        <h2>DEEP DIVE에서 여러분의 무한한 가능성을 발견하세요!</h2>
+      </div>
+    </article>
+  );
+}
+
+export default DeepdiveStep;
