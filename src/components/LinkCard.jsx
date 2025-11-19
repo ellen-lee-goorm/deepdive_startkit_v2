@@ -2,6 +2,8 @@ import React from 'react';
 import { IoIosArrowDropright } from 'react-icons/io';
 
 function LinkCard({ title, description, linkUrl, linkTitle, children }) {
+  const accentColor = '#539CCA';
+
   return (
     <div className="flex gap-14 w-full text-start text-[14px]">
       <section className="flex flex-col flex-1 bg-[var(--card-bg)] px-10 py-8 rounded-2xl">
@@ -14,7 +16,7 @@ function LinkCard({ title, description, linkUrl, linkTitle, children }) {
       <a
         href={linkUrl}
         target="_blank"
-        className="max-w-16 flex flex-col justify-center items-center text-center gap-1 whitespace-pre-line"
+        className={`max-w-16 flex flex-col justify-center items-center text-center gap-1 whitespace-pre-line hover:underline`}
       >
         <IoIosArrowDropright size={56} />
         <p className="font-bold">{linkTitle}</p>
