@@ -4,9 +4,15 @@ import LogoDeepDive from '../assets/logos/logo-deepdive.png';
 import PrelearningRoadmap from '../components/PrelearningRoadmap';
 
 function PrelearningStep() {
+  const inflearnFormLink = '';
+  const shortTitle = '프론트엔드';
+  const accentColor = '#539CCA';
+  const session = '9';
   return (
     <article className="flex flex-col items-center w-full text-[18px] py-24 border-b-[0.8px] border-b-[var(--line)]">
-      <span className="px-3 py-2 border-2 rounded-3xl text-sm font-bold text-[#539CCA] mb-7">
+      <span
+        className={`px-3 py-2 border-2 rounded-3xl text-sm font-bold text-[${accentColor}] mb-7`}
+      >
         사전 몰입 단계
       </span>
       <p className="leading-[21px] mb-11">
@@ -25,7 +31,7 @@ function PrelearningStep() {
             <br />
             인프런 계정을 제출해주세요.
           </p>
-          <a href="" target="_blank" className="underline">
+          <a href={inflearnFormLink} target="_blank" className="underline">
             &gt; 인프런 계정 제출하기
           </a>
         </div>
@@ -37,7 +43,7 @@ function PrelearningStep() {
             과정 진행을 위해 구름LMS에 가입해주세요. <br />
             <br />
             가입 후 아래 양식으로 이름을 변경해주세요.
-            <br /> 김구름(프론트엔드 9회차)
+            <br /> 김구름({shortTitle} {session}회차)
           </p>
           <a
             href="https://k-digital.goorm.io/"

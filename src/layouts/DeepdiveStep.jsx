@@ -6,9 +6,13 @@ import imgMentoring from '../assets/icons/mentoring.png';
 import imgSurvey from '../assets/icons/survey.png';
 
 function DeepdiveStep() {
+  const tobe = '프론트엔드 개발자';
+  const accentColor = '#539CCA';
   return (
     <article className="flex flex-col items-center w-full text-[18px] mb-48 py-24 ">
-      <span className="px-3 py-2 border-2 rounded-3xl text-sm font-bold text-[#539CCA] mb-7">
+      <span
+        className={`px-3 py-2 border-2 rounded-3xl text-sm font-bold text-[${accentColor}] mb-7`}
+      >
         본격 몰입 단계
       </span>
       <p className="leading-[21px] mb-11">
@@ -86,7 +90,7 @@ function DeepdiveStep() {
         </section>
       </div>
       <div className="flex flex-col gap-6 text-center text-2xl font-bold">
-        <h2>풀스택 개발자로 거듭나기 위한 여정이 시작됩니다.</h2>
+        <h2>{tobe}로 거듭나기 위한 여정이 시작됩니다.</h2>
         <h2>DEEP DIVE에서 여러분의 무한한 가능성을 발견하세요!</h2>
       </div>
     </article>

@@ -1,9 +1,12 @@
 import React from 'react';
 
 function Roadmap({ title, description, day, children }) {
+  const accentColor = '#539CCA';
   return (
     <div className="flex gap-7">
-      <div className="text-sm font-bold rounded-4xl px-5 py-2 h-fit bg-[#539CCA]">
+      <div
+        className={`text-sm font-bold rounded-4xl px-5 py-2 h-fit bg-[${accentColor}]`}
+      >
         D-{day}
       </div>
       <div className="flex flex-col gap-6 text-start">
