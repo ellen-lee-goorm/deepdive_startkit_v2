@@ -4,6 +4,7 @@ import imgCS from '../assets/icons/cs.png';
 import imgDeeptalk from '../assets/icons/deeptalk.png';
 import imgMentoring from '../assets/icons/mentoring.png';
 import imgSurvey from '../assets/icons/survey.png';
+import LineCard from '../components/LineCard';
 
 function DeepdiveStep() {
   const tobe = '프론트엔드 개발자';
@@ -20,7 +21,35 @@ function DeepdiveStep() {
         <br />
         강도 높은 학습과 밀착 케어로 확실한 성장을 경험하세요
       </p>
-      <div className="mb-20">과정별 진행 사항</div>
+      <div className="grid grid-cols-2 gap-x-12 gap-y-7 mb-20 w-full">
+        <LineCard title="데일리 EXP 미션">
+          <ul className="list-disc ml-6">
+            <li>
+              자기주도학습 및 학습 기록 습관을 기르기 위한 데일리 미션 진행
+            </li>
+            <li>2주간 매일 데일리 미션 참여할 시, 추가 구름조각 제공</li>
+          </ul>
+        </LineCard>
+        <LineCard title="팀 스터디 & 네트워킹">
+          <ul className="list-disc ml-6">
+            <li>개강 주부터 팀 스터디 시작</li>
+            <li>협업 중심의 학습으로 성장 동력과 소프트스킬 강화</li>
+            <li>개인별 목표에 맞춘 팀 스터디 구성</li>
+          </ul>
+        </LineCard>
+        <LineCard title="챌린지 이벤트">
+          <ul className="list-disc ml-6">
+            <li>구름 조각 보상 시스템</li>
+            <li>게이미피케이션을 통한 재미있는 학습 경험</li>
+          </ul>
+        </LineCard>
+        <LineCard title="데일리 코드 리뷰/피드백">
+          <ul className="list-disc ml-6">
+            <li>매일의 학습을 글로 정리하며 깊이 있는 이해와 복습</li>
+            <li>기록이 곧 성장의 발자취, 향후 포트폴리오로 활용 가능</li>
+          </ul>
+        </LineCard>
+      </div>
       <div className="flex flex-col items-center w-full mb-56">
         <div className="flex flex-col gap-5 mb-20">
           <h1 className="text-2xl font-bold">9 to 6 운영 지원 체계</h1>
