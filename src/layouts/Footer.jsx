@@ -2,7 +2,7 @@ import React from 'react';
 import courseData from '../datas/course.json';
 
 function Footer() {
-  const courseID = 'fe';
+  const courseID = 'fe9-day';
   const contactPhone = courseData[courseID].contactPhone;
   return (
     <footer className="flex flex-col gap-2 w-full text-[var(--footer)] text-start pb-28">

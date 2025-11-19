@@ -8,7 +8,7 @@ import LineCard from '../components/LineCard';
 import courseData from '../datas/course.json';
 
 function DeepdiveStep() {
-  const courseID = 'fe';
+  const courseID = 'fe9-day';
   const tobe = courseData[courseID].tobe;
   const accentColor = courseData[courseID].color;
   return (

@@ -5,11 +5,11 @@ import PrelearningRoadmap from '../components/PrelearningRoadmap';
 import courseData from '../datas/course.json';
 
 function PrelearningStep() {
-  const courseID = 'fe';
+  const courseID = 'fe9-day';
   const inflearnFormLink = '';
   const shortTitle = courseData[courseID].shortTitle;
   const accentColor = courseData[courseID].color;
-  const session = '9';
+  const session = courseData[courseID].session;
   return (
     <article className="flex flex-col items-center w-full text-[18px] py-24 border-b-[0.8px] border-b-[var(--line)]">
       <span

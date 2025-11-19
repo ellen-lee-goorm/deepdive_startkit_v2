@@ -4,9 +4,9 @@ import courseData from '../datas/course.json';
 import { IoChevronDownCircleOutline } from 'react-icons/io5';
 
 function Header() {
-  const courseID = 'fe';
+  const courseID = 'fe9-day';
   const title = courseData[courseID].title;
-  const session = '9';
+  const session = courseData[courseID].session;
   return (
     <header className="flex flex-col text-center items-center pb-24 border-b-[0.8px] border-b-[var(--line)]">
       <img src={banner} alt="프론트엔드 배너 이미지" width="1075px" />

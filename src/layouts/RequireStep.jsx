@@ -3,14 +3,14 @@ import LinkCard from '../components/LinkCard';
 import courseData from '../datas/course.json';
 
 function RequireStep() {
-  const courseID = 'fe';
+  const courseID = 'fe9-day';
   const accentColor = courseData[courseID].color;
   const hrdnetLink = courseData[courseID].hrdnetLink;
   const discordLink = courseData[courseID].discordLink;
   const otFormLink = courseData[courseID].otFormLink;
   const shortTitle = courseData[courseID].shortTitle;
-  const otDateTime = '12월 19일(금) 9:00~18:00';
-  const session = 9;
+  const otDateTime = courseData[courseID].otDateTime;
+  const session = courseData[courseID].session;
 
   return (
     <article className="flex flex-col items-center w-full text-[18px] py-24 border-b-[0.8px] border-b-[var(--line)]">
