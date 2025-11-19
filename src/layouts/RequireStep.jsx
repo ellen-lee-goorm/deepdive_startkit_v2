@@ -1,12 +1,14 @@
 import React from 'react';
 import LinkCard from '../components/LinkCard';
+import courseData from '../datas/course.json';
 
 function RequireStep() {
-  const accentColor = '#539CCA';
-  const registerLink = '';
-  const discordLink = '';
-  const otFormLink = '';
-  const shortTitle = '프론트엔드';
+  const courseID = 'fe';
+  const accentColor = courseData[courseID].color;
+  const hrdnetLink = courseData[courseID].hrdnetLink;
+  const discordLink = courseData[courseID].discordLink;
+  const otFormLink = courseData[courseID].otFormLink;
+  const shortTitle = courseData[courseID].shortTitle;
   const otDateTime = '12월 19일(금) 9:00~18:00';
   const session = 9;
 
@@ -26,7 +28,7 @@ function RequireStep() {
         <LinkCard
           title="고용24 수강신청"
           description="과정 수강을 위해서는 고용24에서 수강신청을 완료해야 합니다. 아래 안내에 따라 수강신청을 완료해주세요."
-          linkUrl={registerLink}
+          linkUrl={hrdnetLink}
           linkTitle={'고용24\n수강신청\n하러가기'}
         >
           <div className="flex gap-8 mb-4">

@@ -5,10 +5,12 @@ import imgDeeptalk from '../assets/icons/deeptalk.png';
 import imgMentoring from '../assets/icons/mentoring.png';
 import imgSurvey from '../assets/icons/survey.png';
 import LineCard from '../components/LineCard';
+import courseData from '../datas/course.json';
 
 function DeepdiveStep() {
-  const tobe = '프론트엔드 개발자';
-  const accentColor = '#539CCA';
+  const courseID = 'fe';
+  const tobe = courseData[courseID].tobe;
+  const accentColor = courseData[courseID].color;
   return (
     <article className="flex flex-col items-center w-full text-[18px] mb-48 py-24 ">
       <span

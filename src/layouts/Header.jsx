@@ -1,9 +1,11 @@
 import React from 'react';
 import banner from '../assets/banners/banner-fe.png';
+import courseData from '../datas/course.json';
 import { IoChevronDownCircleOutline } from 'react-icons/io5';
 
 function Header() {
-  const title = '[구름 x 인프런] 자바 스프링 & 리액트 풀스택 개발자 성장 과정';
+  const courseID = 'fe';
+  const title = courseData[courseID].title;
   const session = '9';
   return (
     <header className="flex flex-col text-center items-center pb-24 border-b-[0.8px] border-b-[var(--line)]">

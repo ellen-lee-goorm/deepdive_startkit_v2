@@ -2,11 +2,13 @@ import React from 'react';
 import LogoInflearn from '../assets/logos/logo-inflearn.svg';
 import LogoDeepDive from '../assets/logos/logo-deepdive.png';
 import PrelearningRoadmap from '../components/PrelearningRoadmap';
+import courseData from '../datas/course.json';
 
 function PrelearningStep() {
+  const courseID = 'fe';
   const inflearnFormLink = '';
-  const shortTitle = '프론트엔드';
-  const accentColor = '#539CCA';
+  const shortTitle = courseData[courseID].shortTitle;
+  const accentColor = courseData[courseID].color;
   const session = '9';
   return (
     <article className="flex flex-col items-center w-full text-[18px] py-24 border-b-[0.8px] border-b-[var(--line)]">
